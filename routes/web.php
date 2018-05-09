@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return "Welcome boss";
 });
+
+Route::get('/scrape', 'ScrappingController@get_rates');
+Route::get('api/v1/rates/dollar','RatesController@show');
