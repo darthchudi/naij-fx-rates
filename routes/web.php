@@ -12,8 +12,10 @@
 */
 
 Route::get('/', function () {
-    return "Welcome boss";
+    return "Welcome to naij-fx-rates-api, info on how to use consume coming soon!!";
 });
 
-Route::get('/scrape', 'ScrappingController@get_rates');
-Route::get('api/v1/rates/dollar','RatesController@show');
+Route::get('scrape', 'ScrappingController@get_rates');
+Route::get('api/v1/rates/dollar','RatesController@show_dollar');
+Route::get('api/v1/rates/dollar','RatesController@show_dollar');
+Route::get('api/v1/rates/','RatesController@show');

@@ -16,10 +16,20 @@ class Rates extends JsonResource
     {
         // return parent::toArray($request);
         return [
-            'id' => $this->id,
-            'Date'=> $this->Date,
-            'BUY' => $this->Dollar_BUY,
-            'SELL' => $this->Dollar_SELL,
+            [
+                'id' => $this->id,
+                'Currency' => 'Pounds',
+                'Date'=> $this->Date,
+                'BUY' => $this->Pounds_BUY,
+                'SELL' => $this->Pounds_SELL,
+            ],
+            [
+                'id' => $this->id,
+                'Currency' => 'Dollar',
+                'Date'=> $this->Date,
+                'BUY' => $this->Dollar_BUY,
+                'SELL' => $this->Dollar_SELL,
+            ]
         ];
     }
 }
