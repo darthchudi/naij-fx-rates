@@ -17,5 +17,5 @@ Route::get('/', function () {
 
 Route::get('scrape', 'ScrappingController@get_rates');
 Route::get('api/v1/rates/dollar','RatesController@show_dollar');
-Route::get('api/v1/rates/dollar','RatesController@show_dollar');
+Route::get('api/v1/rates/pounds','RatesController@show_pounds');
 Route::get('api/v1/rates/','RatesController@show');
